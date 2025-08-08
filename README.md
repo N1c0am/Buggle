@@ -79,7 +79,7 @@ El proyecto es un sistema integral de gestión de logs diseñado para facilitar 
 
 
 ## Estructura de carpetas
-
+```
 📦my-project/
 ├── 📁frontend/
 │   ├── 📁public/               # Archivos estáticos (imágenes, favicon, etc)
@@ -127,4 +127,16 @@ El proyecto es un sistema integral de gestión de logs diseñado para facilitar 
 │   └── testUser.js
 ├── .gitsubmodules 
 └── README.md
+```
 
+## Enlaces útiles
+
+`Figma`: https://www.figma.com/board/IbybmAKhYf2UFb70Knst3i/Research-App-Gestion-de-logs
+
+`ClickUp`: https://app.clickup.com/90151442967/v/li/901513753734 
+
+`Despliegue provisional del frontend`: https://pruebas-concepto.vercel.app/
+
+`Despliegue del backend`: https://backend-llwm.onrender.com/
+
+`Swagger`: https://backend-llwm.onrender.com/api-docs/
