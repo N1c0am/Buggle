@@ -1,7 +1,7 @@
-# Proyecto FooTalent (nombre por determinar)
+# Buggle
 
 **Descripción:**  
-El proyecto es un sistema integral de gestión de logs diseñado para facilitar la trazabilidad, diagnóstico y resolución de fallos en entornos de desarrollo y producción. Su núcleo es un dashboard adaptado a diferentes roles (Desarrolladores, Administradores) que permite visualizar y gestionar errores tanto automáticos como manuales, con acceso controlado según permisos. Además, ofrece funcionalidades clave como filtrado avanzado, historial detallado, asignación y seguimiento de incidencias. El MVP se enfoca en proporcionar una plataforma colaborativa, segura y eficiente que mejora la comunicación y la respuesta ante fallos, sentando las bases para futuras mejoras basadas en IA y personalización avanzada.
+Buggle es un sistema integral de gestión de logs diseñado para facilitar la trazabilidad, diagnóstico y resolución de fallos en entornos de desarrollo y producción. Su núcleo es un dashboard adaptado a diferentes roles (Desarrolladores, Administradores) que permite visualizar y gestionar errores tanto automáticos como manuales, con acceso controlado según permisos. Además, ofrece funcionalidades clave como filtrado avanzado, historial detallado, asignación y seguimiento de incidencias. El MVP se enfoca en proporcionar una plataforma colaborativa, segura y eficiente que mejora la comunicación y la respuesta ante fallos, sentando las bases para futuras mejoras basadas en IA y personalización avanzada.
 
 ---
 
@@ -129,6 +129,22 @@ El proyecto es un sistema integral de gestión de logs diseñado para facilitar 
 └── README.md
 ```
 
+## Organización de ramas
+
+Frontend y Backend se organizan en dos ramas principales: main y develop (dev en el caso de backend). Al crear una nueva feature, debe crearse una nueva rama a partir de develop, con el nombre feature/nombre-de-la-feature.
+Se requiere una PR aprobada por otro colaborador para poder subir los cambios a main.
+
+## Organización de commits 
+
+Estructura básica de un commit: <tipo> [ámbito opcional]: <descripción breve>
+Los tipos incluyen `feat` (para nuevas funcionalidades), `fix` (para correcciones) , `docs` (para cambios en la documentación) o `BREAKING CHANGE` si es un cambio que rompe compatibilidad.
+
+Ejemplos:
+- feat(auth): añade soporte para login con Google
+- fix(api): corrige error en parseo de fechas
+- docs(readme): añade sección de instalación
+- BREAKING CHANGE(api): cambia formato de respuesta de /users, ahora la respuesta devuelve un objeto en lugar de un array
+  
 ## Enlaces útiles
 
 `Figma`: https://www.figma.com/board/IbybmAKhYf2UFb70Knst3i/Research-App-Gestion-de-logs
