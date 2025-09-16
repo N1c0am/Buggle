@@ -106,25 +106,32 @@ Buggle es un sistema integral de gestión de logs diseñado para facilitar la tr
 │   └── vite.config.js
 │
 ├── 📁backend/
+│   ├── 📁.vscode/              # Configuración para personalizar el tema de color
 │   ├── 📁bin/                  # Scripts de inicio del servidor
 │   ├── 📁connections/          # Conexiones a la base de datos
 │   ├── 📁controllers/          # Controladores para las rutas
+│   ├── 📁css/                  # Estilos personalizados (ej: custom-swagger)
 │   ├── 📁docs/                 # Documentación de la API
+│   ├── 📁images/               # Recursos gráficos (ej: buggle_logo.svg)
+│   ├── 📁langgraph/            # Configuración de LangGraph y Sentry (archivos de estado y eventos)
 │   ├── 📁middlewares/          # Middlewares de Express
 │   ├── 📁models/               # Modelos de Mongoose (DB)
 │   ├── 📁public/               # Archivos como la hoja de estilos
 │   ├── 📁routes/               # Rutas de Express
+│   ├── 📁scripts/              # Scripts utilitarios (ej: inicialización de superadmin)
 │   ├── 📁services/             # Lógica de negocio y acceso a datos
 │   ├── 📁swagger/              # Documentación de la API con Swagger
+│   ├── 📁templates/            # Plantillas de correos electrónicos
+│   ├── 📁utils/                # Utilidades y helpers (ej: validador de dominios de email)
 │   ├── 📁validations/          # Schemas de validación (Joi, express-validator)
 │   ├── 📁views/                # Vistas preliminares realizadas en Pug
-│   ├── .gitignore            # Archivos y carpetas a ignorar en Git
-│   ├── app.js                # Archivo principal de la aplicación
+│   ├── .gitignore              # Archivos y carpetas a ignorar en Git
+│   ├── app.js                  # Archivo principal de la aplicación
 │   ├── package-lock.json
 │   ├── package.json   
-│   ├── server.js             
-│   ├── testGeneral.js         
-│   └── testUser.js
+│   ├── server.js               # Punto de entrada: inicializa la app y arranca el servidor      
+│   ├── testEmailValidator.js        
+│   └── testSuperAdmin.js
 ├── .gitsubmodules 
 └── README.md
 ```
