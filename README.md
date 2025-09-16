@@ -46,7 +46,7 @@ Buggle es un sistema integral de gestión de logs diseñado para facilitar la tr
 
     Para instalar este proyecto, debe añadirse la opción --recurse-submodules al hacer git clone para añadir los submódulos. En caso de haber clonado sin esa opción, podemos inicializar los submódulos manualmente con:
 
-        cd proyecto-footalent
+        cd buggle
         git submodule update --init --recursive
 
 2. Instalar dependencias:   
